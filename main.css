@@ -1,3 +1,82 @@
+/* --- Main --- */
 * {
   font-family: 'Nunito Sans', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* --- Header --- */
+header {
+  align-items: center;
+  display: flex;
+  height: 90px;
+  justify-content: center;
+  width: 100%;
+}
+
+header img {
+  height: 65px;
+}
+
+/* --- Ingredient Images --- */
+.ingredient-images {
+  height: 150px;
+  margin: 0;
+  padding: 0 0 10px 0;
+  width: 100%;
+}
+
+.ingredient-images li {
+  list-style: none;
+  height: 100%;
+  width: 100%;
+}
+
+.ingredient-images li img {
+  filter: grayscale(100%);
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* --- Ingredient Cards --- */
+.ingredient-cards {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.ingredient-cards li {
+  border: 1px solid #D3D3D3;
+  border-radius: 2px;
+  list-style: none;
+  margin: 7px;
+  padding: 7px;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: .5px;
+}
+
+.card-top p {
+  margin-top: 0;
+}
+
+.card-top img {
+  height: 100px;
+  width: 100px;
+}
+
+.card-description p {
+  font-size: 13px;
+  font-style: italic;
+  letter-spacing: .5px;
+  margin-top: 0;
 }
