@@ -4,9 +4,11 @@
 }
 
 html, body {
+  -webkit-overflow-scrolling: touch;
   height: 100%;
   margin: 0;
   overflow-x: hidden;
+  overflow-y: scroll;
   width: 100%;
 }
 
