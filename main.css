@@ -7,8 +7,6 @@ html, body {
   -webkit-overflow-scrolling: touch;
   height: 100%;
   margin: 0;
-  overflow-x: hidden;
-  overflow-y: scroll;
   width: 100%;
 }
 
@@ -25,8 +23,51 @@ header img {
   height: 65px;
 }
 
+/* --- Overview & FAQ --- */
+.overview {
+  display: flex;
+  flex-direction: column;
+  height: 375px;
+  justify-content: space-around;
+}
+
+.overview p {
+  color: #666666;
+  letter-spacing: 0.4px;
+  font-size: 20px;
+  font-style: italic;
+  padding: 0 30px;
+}
+
+.overview p span {
+  color: #4C4C4C;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.overview-btn-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.overview-btn-container button {
+  background: #4C4C4C;
+  border: 0;
+  color: #ffffff;
+  font-size: 15px;
+  height: 40px; 
+  letter-spacing: 1px;
+  width: 150px;
+}
+
+.overview-btn-container button:hover, button:active {
+  background: #000000;
+}
+
 /* --- Ingredient Images --- */
-.ingredient-images {
+/* .ingredient-images {
   height: 150px;
   margin: 0;
   padding: 0 0 10px 0;
@@ -98,36 +139,45 @@ header img {
 #photo-eight { 
   -webkit-animation-delay: 35s;
   animation-delay: 35s; 
-}
+} */
 
 /* --- Ingredient Cards --- */
 .ingredient-cards {
   margin: 0;
   max-width: 760px;
-  padding: 10px 0 0 0;
+  padding: 35px 0 0 0;
   width: 100%;
 }
 
 .ingredient-cards li {
-  border: 1px solid #D3D3D3;
+  border-bottom: 1px solid #D3D3D3;
   border-radius: 2px;
   list-style: none;
   margin: 0 7px 7px 7px;
   max-width: 760px;
-  padding: 7px;
+  padding: 15px 10px;
 }
 
-.card-top {
+.card {
   display: flex;
   justify-content: space-between;
   letter-spacing: .5px;
 }
 
-.card-top p {
+.card h2 {
+  color: #4C4C4C;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.card p {
+  color: #666666;
+  font-size: 17px;
+  font-style: italic;
   margin-top: 0;
 }
 
-.card-top img {
+.card img {
   height: 100px;
   width: 100px;
 }
@@ -137,6 +187,31 @@ header img {
   font-style: italic;
   letter-spacing: .5px;
   margin-top: 0;
+}
+
+/* --- Ingredient Stories --- */
+.ingredient-stories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px 0 0 0;
+  width: 100%;
+}
+
+.ingredient-stories li {
+  color: #666666;
+  list-style: none;
+  font-size: 15px;
+  font-style: italic;
+  padding: 20px;
+}
+
+.ingredient-stories li span {
+  color: #4C4C4C;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 /* --- Media Queries --- */
